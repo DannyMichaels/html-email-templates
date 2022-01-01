@@ -4,11 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="supported-color-schemes" content="light dark" />
+    <!-- <meta name="color-scheme" content="light dark" /> -->
+    <!-- <meta name="supported-color-schemes" content="light dark" /> -->
     <title>HTML Email Template Boilerplate</title>
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
 
       @media screen and (max-width: 599.98px) {
       }
@@ -20,6 +33,140 @@
       @media (prefers-color-scheme: dark) {
       }
     </style>
+
+    <!--[if (gte mso 9)|(IE)]
+      <style type="text/css">
+        table {border-collapse: collapse !important;}
+      </style>
+  <![endif]-->
   </head>
-  <body></body>
+  <!-- margin has to be with capital M for outlook -->
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!-- outlook conditional css: https://stackoverflow.design/email/base/mso/ -->
+    <!--[if (gte mso 9)|(IE)]
+      <style type="text/css">
+        body {background-color:#dde0e1!important;}
+        body, table, td, p, a {font-family: sans-serif, Arial, Helvitica!important;}
+      </style>
+  <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          <!-- Add Preheader Text Here (85-100 characters in lengths) -->
+        </div>
+        <!-- end preheader -->
+
+        <!--[if (gte mso 9)|(IE)]
+            <table width="600" align="center" style="border-spacing: 0; color:#565656;" role="presentation">
+              <tr>
+                <td style="padding: 0;">
+              </tr>
+            </table>
+          <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: 'Lato', sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START SOCIAL ICONS -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td height="3" style="background-color: #21c6b8"></td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="
+                      background-color: #ebf5fa;
+                      text-align: center;
+                      padding: 10px 0px 8px 0px;
+                    "
+                  >
+                    <a href="https://example.com" target="_blank"
+                      ><img src="" alt=""
+                    /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="3" style="background-color: #21c6b8"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END SOCIAL ICONS -->
+
+          <!-- START LOGO -->
+          <!-- END LOGO -->
+
+          <!-- START BANNER -->
+          <!-- END BANNER -->
+
+          <!-- START TWO COLUMNS -->
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO THIRDS COLUMNS -->
+          <!-- END TWO THIRDS COLUMNS -->
+
+          <!-- START THREE COLUMNS -->
+          <!-- END THREE COLUMNS -->
+
+          <!-- START FOUR COLUMNS -->
+          <!-- END FOUR COLUMNS -->
+
+          <!-- START GREEN BORDER -->
+          <!-- END GREEN BORDER -->
+
+          <!-- START FOOTER -->
+          <!-- END FOOTER -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]
+        </td>
+        </tr>
+        </table>
+      <![endif]-->
+      </div>
+    </center>
+  </body>
 </html>
